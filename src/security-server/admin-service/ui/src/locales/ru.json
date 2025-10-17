@@ -482,7 +482,7 @@
     "type": "Тип"
   },
   "global": {
-    "appTitle": "Сервер безопасности X-Road"
+    "appTitle": "Сервер безопасности X-Based"
   },
   "globalAlert": {
     "backupRestoreInProgress": "Конфигурация сервера безопасности восстанавливается из резервной копии. Процесс начат в {startTime}",

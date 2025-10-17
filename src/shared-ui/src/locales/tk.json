@@ -167,7 +167,7 @@
         "PinIncorrect": "Nädogry PIN",
         "TokenNotAvailable": "Token elýeterli däl",
         "TokenNotFound": "Token tapylmady",
-        "UnknownMember": "X-Road ýadrody - gol çekiji: Näbelli agza"
+        "UnknownMember": "X-Based ýadrody - gol çekiji: Näbelli agza"
       }
     },
     "generate_backup_interrupted": "Ätiýaçlyk nusgasynyň döredilmegi bölündi",
@@ -206,7 +206,7 @@
     "software": {
       "feedback": "Seslenmeler we teswirler",
       "title": "Programma üpjünçiligi",
-      "versionPrefix": "X-Road"
+      "versionPrefix": "X-Based"
     }
   },
   "global": {

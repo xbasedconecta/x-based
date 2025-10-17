@@ -170,7 +170,7 @@
         "PinIncorrect": "PIN inválido",
         "TokenNotAvailable": "Token não disponível",
         "TokenNotFound": "Token não encontrado",
-        "UnknownMember": "Signer do X-Road: Membro desconhecido"
+        "UnknownMember": "Signer do X-Based: Membro desconhecido"
       }
     },
     "generate_backup_interrupted": "Geração de backup interrompida",
@@ -211,7 +211,7 @@
     "software": {
       "feedback": "Feedback",
       "title": "Software",
-      "versionPrefix": "X-Road"
+      "versionPrefix": "X-Based"
     }
   },
   "global": {

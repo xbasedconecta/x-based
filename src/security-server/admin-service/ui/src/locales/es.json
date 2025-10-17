@@ -497,7 +497,7 @@
     "type": "Tipo"
   },
   "global": {
-    "appTitle": "Servidor de seguridad X-road"
+    "appTitle": "Servidor de seguridad X-based"
   },
   "globalAlert": {
     "backupRestoreInProgress": "La configuración del servidor de seguridad se está restaurando desde una copia de seguridad. El proceso se inició a las {starttime}",

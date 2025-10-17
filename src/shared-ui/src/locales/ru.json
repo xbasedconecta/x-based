@@ -167,7 +167,7 @@
         "PinIncorrect": "Неверный PIN-код",
         "TokenNotAvailable": "Токен недоступен",
         "TokenNotFound": "Токен не найден",
-        "UnknownMember": "Ядро X-Road - подписывающее устройство: Неизвестный участник"
+        "UnknownMember": "Ядро X-Based - подписывающее устройство: Неизвестный участник"
       }
     },
     "generate_backup_interrupted": "Создание резервной копии прервано",
@@ -206,7 +206,7 @@
     "software": {
       "feedback": "Обратная связь",
       "title": "Программное обеспечение",
-      "versionPrefix": "X-Road"
+      "versionPrefix": "X-Based"
     }
   },
   "global": {

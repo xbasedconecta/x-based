@@ -11,30 +11,122 @@ class CAHandler(BaseHTTPRequestHandler):
 
     FORM_HTML = '''\
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <title>Test CA</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./página ca/favicon.ico" type="image/x-icon">
+    <title>X-Based | CA</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      fieldset {
+        border: none;
+        text-align: center;
+      }
+
+      legend {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: #000;
+      }
+
+      #csr {
+        display: none;
+      }
+
+      /* Botão de selecionar arquivo */
+      input[type="file"] + label::after {
+        content: "Nenhum Arquivo";
+        display: block;
+        margin-top: 5px;
+        font-size: 0.9em;
+        color: #888;
+      }
+
+      input[type="file"]::file-selector-button {
+        background-color: #008000;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+
+      /* Botão normal (Sign/Assinar) */
+      input[type="submit"] {
+        background-color: #008000;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #008000;
+      }
+
+      /* Radio buttons alinhados */
+      div {
+        margin: 15px 0;
+      }
+
+      input[type="radio"] {
+        margin-left: 10px;
+      }
+
+      #escolhaArquivo{
+        background-color: #008000;
+        padding: 25px;
+        color: white;
+        border-radius: 10rem;
+        cursor: pointer;
+      }
+
+      #escolhaArquivo:hover{
+        background-color: #1f706b;
+      }
+    </style>
   </head>
   <body>
     <form method="POST" enctype="multipart/form-data" action="sign">
       <fieldset>
-        <legend>Test CA: CSR signing</legend>
+        <legend>X-Based | CA</legend>
         <div>
-          <label style="display:inline-block; width:4em" for="csr">CSR</label>
+          <label for="csr" id="escolhaArquivo">Escolha Um Arquivo</label>
           <input name="certreq" type="file" id="csr">
         </div>
-        <div>
-          <label style="display:inline-block; width:4em">Type</label>
+        <div style="margin-top: 4rem ;">
+          <label>Type</label><br>
           <input type="radio" name="type" id="sign" value="sign">
           <label for="sign">Sign</label>
+          <br>
           <input type="radio" name="type" id="auth" value="auth">
           <label for="auth">Auth</label>
+          <br>
           <input type="radio" name="type" id="auto" value="auto" checked>
           <label for="auto">Autodetect from file name</label>
         </div>
         <div>
-          <input type="submit" value="Sign" style="margin-top:1em"/>
-         </div>
+          <input type="submit" value="Assinar"/>
+        </div>
       </fieldset>
     </form>
   </body>

@@ -530,7 +530,7 @@
     "undefinedSubsystemName": "indefinido"
   },
   "global": {
-    "appTitle": "Servidor Seguro X-Road"
+    "appTitle": "Servidor Seguro X-Based"
   },
   "globalAlert": {
     "backupRestoreInProgress": "A configuração do Servidor Seguro está sendo restaurada a partir de um backup. Processo iniciado em {startTime}",

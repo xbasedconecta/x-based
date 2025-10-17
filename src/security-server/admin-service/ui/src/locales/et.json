@@ -551,7 +551,7 @@
     "undefinedSubsystemName": "määramata"
   },
   "global": {
-    "appTitle": "X-Road turvaserver"
+    "appTitle": "X-Based turvaserver"
   },
   "globalAlert": {
     "backupRestoreInProgress": "Toimub turvaserveri konfiguratsiooni taastamine varukoopiast. Protsess algas kell {startTime}",

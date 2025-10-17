@@ -170,7 +170,7 @@
         "PinIncorrect": "Vale PIN-kood",
         "TokenNotAvailable": "Krüptomoodul pole saadaval",
         "TokenNotFound": " Krüptomoodulit ei leitud",
-        "UnknownMember": "X-Road tarkvara - signeerija: Tundmatu liige"
+        "UnknownMember": "X-Based tarkvara - signeerija: Tundmatu liige"
       }
     },
     "generate_backup_interrupted": "Varukoopia loomine katkestatud",
@@ -211,7 +211,7 @@
     "software": {
       "feedback": "Tagasiside",
       "title": "Tarkvara",
-      "versionPrefix": "X-Road"
+      "versionPrefix": "X-Based"
     }
   },
   "global": {

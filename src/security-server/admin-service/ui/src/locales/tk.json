@@ -482,7 +482,7 @@
     "type": "Görnüşi"
   },
   "global": {
-    "appTitle": "X-Road Howpsuzlyk serweri"
+    "appTitle": "X-Based Howpsuzlyk serweri"
   },
   "globalAlert": {
     "backupRestoreInProgress": "Howpsuzlyk serweriniň konfigurasiýasy ätiýaçlyk nusgadan dikeldilýär.Proses {startTime}-da başlady",
