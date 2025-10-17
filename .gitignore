@@ -23,3 +23,5 @@ mailpit*
 **/.settings/
 **/bin/
 **/.factorypath
+# Large test files
+**/attachment-small-mantis.query
