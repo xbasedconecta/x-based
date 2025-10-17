@@ -1,0 +1,761 @@
+{
+  "action": {
+    "addName": "Add subsystem name",
+    "approve": "Approve",
+    "decline": "Decline",
+    "generateCsr": "Generate CSR",
+    "rename": "Rename",
+    "select": "Select"
+  },
+  "apiKey": {
+    "role": {
+      "XROAD_MANAGEMENT_SERVICE": "Management Services"
+    }
+  },
+  "customValidation": {
+    "invalidIpAddress": "Field must contain IP address or multiple addresses separated by comma",
+    "invalidUrl": "URL is invalid, examples of valid URL formats: 'http://www.example.com', 'https://www.example.com'"
+  },
+  "error_code": {
+    "backup_deletion_failed": "Failed to delete backup",
+    "cannot_add_member_to_owners_group": "Cannot add members to server owner group",
+    "cannot_convert_bytes_to_certificate": "Cannot convert bytes to certificate",
+    "cannot_read_certificate": "Cannot read TLS certificate",
+    "certificate_already_exists": "The imported certificate already exists",
+    "certificate_import_failed": "Cannot import TLS certificate",
+    "certificate_profile_info_class_not_found": "Certificate profile info class was not found",
+    "certificate_writing_failed": "Writing certificate to file failed",
+    "certification_service_not_found": "Certification service not found.",
+    "conf_verification.anchor_not_for_external_source": "Configuration verification failed: anchor_not_for_external_source",
+    "conf_verification.missing_private_params": "Configuration verification failed: missing_private_params",
+    "conf_verification.other": "Configuration verification failed: other",
+    "conf_verification.outdated": "Configuration verification failed: outdated",
+    "conf_verification.signature_invalid": "Configuration verification failed: signature_invalid",
+    "conf_verification.unreachable": "Configuration verification failed: unreachable",
+    "configuration_not_found": "Configuration Source not found",
+    "configuration_part_file_not_found": "Configuration part file not found",
+    "configuration_part_validation_failed": "Configuration part validation failed",
+    "configuration_part_validator_not_found": "Configuration part validator not found",
+    "csr_generation_failed": "CSR generation failed",
+    "double_file_extension": "Double file extension is not allowed",
+    "error_activating_signing_key": "Error activating signing key",
+    "error_deleting_signing_key": "Error deleting signing key",
+    "error_recreating_anchor": "Error re-creating anchor file",
+    "generate_key_cert_interrupted": "Key and certificate generation has been interrupted",
+    "global_group_exists": "Global group with the same code already exists.",
+    "global_group_not_found": "Global group by given code does not exist",
+    "id_not_a_number": "Id is not a number",
+    "init_already_initialized": "Central server Initialization failed, already fully initialized",
+    "init_invalid_params": "Empty, missing or redundant parameters provided for initialization",
+    "init_signer_pin_policy_failed": "Token pin policy failure at Signer",
+    "init_software_token_failed": "Software token initialization failed",
+    "instance_identifier_not_set": "System parameter for instance identifier not set",
+    "intermediate_ca_not_found": "Intermediate CA not found",
+    "invalid_address_char": "Address field contains invalid characters",
+    "invalid_encoded_id": "Invalid encoded id",
+    "invalid_file_content_type": "Invalid content type of uploaded file",
+    "invalid_file_extension": "Invalid file extension",
+    "invalid_ip_address": "Invalid ip address",
+    "invalid_member_id": "Invalid member id",
+    "invalid_pagination_properties": "Pagination has invalid properties",
+    "invalid_parameters": "Validation failure",
+    "invalid_role": "Invalid role",
+    "invalid_service_provider_id": "Invalid service provider id",
+    "invalid_sort_properties": "Invalid sort parameter",
+    "invalid_subsystem_id": "Invalid subsystem id",
+    "invalid_url": "Invalid url",
+    "key_and_cert_generation_failed": "Failed to generate TLS key and certificate",
+    "key_generation_failed": "Signing key generation failed",
+    "key_not_found": "The imported certificate does not match the TLS key",
+    "malformed_anchor": "Malformed anchor file",
+    "management_request_cannot_register_owner": "Cannot register owner as a client",
+    "management_request_client_already_owner": "Client is already owner of the security server",
+    "management_request_client_already_registered": "Client already registered to a server",
+    "management_request_client_registration_not_found": "Client registration does not exist",
+    "management_request_exists": "A pending management request already exists.",
+    "management_request_invalid_auth_certificate": "Invalid authentication certificate",
+    "management_request_invalid_state": "Requested operation can not be applied in this state",
+    "management_request_invalid_state_for_approval": "Management request can not be approved",
+    "management_request_member_not_found": "Member does not exist",
+    "management_request_not_found": "No management request with the specified id found.",
+    "management_request_not_supported": "Unknown management request type",
+    "management_request_owner_must_be_client": "Owner is not registered as client on the security server",
+    "management_request_owner_must_be_member": "Owner must be a member",
+    "management_request_security_server_exists": "Certificate is already registered.",
+    "management_request_server_code_exists": "Member already owns a security server with server code",
+    "management_request_server_not_found": "Security server not found",
+    "management_request_server_owner_not_found": "Security server owner not found",
+    "management_request_unknown_type": "Unknown request type",
+    "management_service_provider_not_set": "Management service provider not set",
+    "member_class_exists": "Member class with the same code already exists.",
+    "member_class_is_in_use": "Cannot delete member class: Found X-Road members belonging to the class. Only classes with no registered members can be deleted.",
+    "member_class_not_found": "No member class with the specified code found.",
+    "member_exists": "Member with the same code already exists.",
+    "member_not_found": "No member with the specified code/id found.",
+    "no_configuration_signing_keys_configured": "No configuration signing keys configured",
+    "ocsp_responder_not_found": "OCSP Responder not found",
+    "owners_global_group_cannot_be_deleted": "Cannot perform delete action on server owners group",
+    "owners_global_group_member_cannot_be_deleted": "Cannot perform delete action on server owners group member",
+    "security_server_not_found": "Security server not found",
+    "signer_proxy_error": "Signer proxy exception",
+    "signing_key_action_not_possible": "Signing key action not possible",
+    "signing_key_not_found": "Signing key not found",
+    "ss_auth_certificate_not_found": "Authentication certificate not found",
+    "subsystem_already_registered_to_security_server": "Subsystem already registered to the security server",
+    "subsystem_exists": "Subsystem with the same code already exists.",
+    "subsystem_not_found": "Subsystem with specified code not found.",
+    "subsystem_not_registered_to_security_server": "Subsystem is not registered to the given security server.",
+    "subsystem_registered_and_cannot_be_deleted": "Cannot delete already registered subsystem.",
+    "timestamping_authority_not_found": "Timestamping authority not found",
+    "token_action_not_possible": "Token action not possible",
+    "token_activation_failed": "Token activation failed",
+    "token_deactivation_failed": "Token deactivation failed",
+    "token_incorrect_pin_format": "Incorrect PIN format",
+    "token_invalid_characters": "The provided pin code contains invalid characters",
+    "token_pin_final_try": "Tries left: 1",
+    "token_pin_locked": "Token PIN locked",
+    "trusted_anchor_not_found": "Trusted anchor not found",
+    "trusted_anchor_verification_failed": "Trusted anchor verification failed",
+    "unknown_configuration_part": "Unknown configuration part"
+  },
+  "fields": {
+    "acmeServerDirectoryUrl": "ACME server directory URL",
+    "acmeServerIpAddress": "ACME server IP address(es)",
+    "authenticationCertificateProfileId": "Authentication certificate profile id",
+    "certFile": "Certificate File",
+    "certProfile": "Certificate Profile Info",
+    "distinguishedName": "Distinguished Name",
+    "init": {
+      "address": "Central Server Address",
+      "confirmPin": "Repeat PIN",
+      "identifier": "Instance Identifier",
+      "pin": "PIN",
+      "repeatPin": "Repeat PIN"
+    },
+    "initialServerConf": {
+      "centralServerAddress": "Central Server Address",
+      "instanceIdentifier": "Instance Identifier"
+    },
+    "keyLabel": "Key friendly name",
+    "memberCode": "Member Code",
+    "memberName": "Member Name",
+    "securityServerAddress": "Security server address",
+    "serverCode": "Server code",
+    "serviceAddress": "Central Server address",
+    "signingCertificateProfileId": "Signing certificate profile id",
+    "subsystemCode": "Subsystem Code",
+    "tokenPin": "Token PIN",
+    "url": "URL",
+    "username": "Username"
+  },
+  "filters": {
+    "apply": "Apply",
+    "chooseFilters": "Choose filters",
+    "clearFields": "Clear fields",
+    "groupMembers": {
+      "byClass": "By class",
+      "byCode": "By code",
+      "byInstance": "By instance",
+      "bySubsystem": "By subsystem",
+      "byType": "By type",
+      "class": "Class",
+      "instance": "Instance",
+      "member": "Member",
+      "subsystem": "Subsystem"
+    },
+    "managementRequests": {
+      "byCreationDate": "By creation date",
+      "byRequestType": "By request type",
+      "byServerCode": "By server code",
+      "byServerOwnerClass": "By server owner class",
+      "byServerOwnerCode": "By server owner code",
+      "byServerOwnerName": "By server owner name",
+      "bySource": "By source",
+      "byStatus": "By status"
+    }
+  },
+  "global": {
+    "appTitle": "X-Road Central Server",
+    "approve": "Approve",
+    "class": "Class",
+    "code": "Code",
+    "created": "Created",
+    "delete": "Delete",
+    "id": "Id",
+    "instance": "Instance",
+    "memberClass": "Member class",
+    "memberCode": "Member code",
+    "memberName": "Member name",
+    "navigation": {
+      "back": "Back"
+    },
+    "register": "Register",
+    "search": "Search",
+    "server": "Server",
+    "status": "Status",
+    "subsystem": "Subsystem",
+    "type": "Type"
+  },
+  "globalConf": {
+    "anchor": {
+      "certificateHash": "Certificate Hash (SHA-224)",
+      "created": "Created",
+      "download": "Download",
+      "recreate": "Re-create",
+      "recreateSuccess": "{configurationType} configuration anchor generated successfully",
+      "title": "Anchor"
+    },
+    "cfgParts": {
+      "allVersions": "All versions",
+      "contentIdentifier": "Content Identifier",
+      "dialog": {
+        "upload": {
+          "success": "Configuration Part uploaded successfully.",
+          "title": "Upload Configuration Part",
+          "uploadConfigurationPart": "Upload the configuration file from your computer"
+        }
+      },
+      "file": "File",
+      "title": "Configuration Parts",
+      "updated": "Updated",
+      "version": "Version"
+    },
+    "downloadUrl": {
+      "title": "Download URL",
+      "urlAddress": "URL Address"
+    },
+    "globalConf": "Global Configuration",
+    "internalConf": "Internal Configuration",
+    "trustedAnchor": {
+      "dialog": {
+        "delete": {
+          "confirmation": "Delete {identifier} anchor with Hash (SHA-224) {hash}?",
+          "success": "Successfully deleted Trusted anchor",
+          "title": "Delete Anchor"
+        },
+        "upload": {
+          "confirmation": "Continue with upload?",
+          "field": {
+            "generated": "Generated",
+            "hash": "Hash (SHA-224)"
+          },
+          "info": "Trusted anchor details:",
+          "success": "Successfully uploaded Trusted anchor",
+          "title": "Confirm trusted anchor details"
+        }
+      }
+    },
+    "trustedAnchors": "Trusted Anchor"
+  },
+  "globalGroup": {
+    "addMembers": "Add Members",
+    "added": "Added",
+    "areYouSure": "Are you sure you want to remove the global group {group}?",
+    "class": "Class",
+    "code": "Code",
+    "deleteGroup": "Delete Group",
+    "description": "Description",
+    "descriptionSaved": "Description saved successfully.",
+    "dialog": {
+      "addMembers": {
+        "success": "Members with identifiers: {identifiers} are added to this global group",
+        "title": "Add Members"
+      },
+      "deleteMember": {
+        "confirmation": "Are you sure you want to delete the group member with identifier \"{identifier}\" from this global group? Enter the member code to confirm.",
+        "placeholder": "Enter Member Code",
+        "success": "Member with identifier \"{identifier}\" is deleted from this global group",
+        "title": "Delete Member"
+      }
+    },
+    "editDescription": "Edit Description",
+    "groupDeletedSuccessfully": "Global group deleted successfully.",
+    "groupMembers": "Group members ({memberCount})",
+    "instance": "Instance",
+    "memberName": "Member Name",
+    "subsystem": "Subsystem",
+    "type": "Type"
+  },
+  "globalResources": {
+    "addGlobalGroup": "Add Global Group",
+    "code": "Code",
+    "description": "Description",
+    "globalGroupSuccessfullyAdded": "Global group added successfully.",
+    "globalGroups": "Global Groups",
+    "memberCount": "Member Count",
+    "updated": "Updated"
+  },
+  "init": {
+    "address": {
+      "info": "Central server’s public DNS name or external IP address. Used for inbound connections from the external network to the central server."
+    },
+    "csIdentification": "Central Server Identification",
+    "initialConfiguration": "Initial Configuration",
+    "instanceIdentifier": {
+      "info": "X-Road instance code, uniquely identifies this X-Road instance."
+    },
+    "notification": "The Central Server initialized! Now continue with the full configuration.",
+    "pin": {
+      "info": "PIN for accessing software token.",
+      "pinMatchError": "Password confirmation does not match",
+      "repeat": "Repeat PIN"
+    },
+    "softwareToken": "Software Token"
+  },
+  "keys": {
+    "addKey": "Add key",
+    "algorithm": "Key algorithm",
+    "created": "Created",
+    "dialog": {
+      "activate": {
+        "confirmButton": "Activate",
+        "success": "Sign Key '{label}' activated successfully",
+        "text": "Activate key '{label}'?",
+        "title": "Activate key"
+      },
+      "add": {
+        "confirmButton": "Add",
+        "labelField": "Key friendly name",
+        "success": "Sign Key '{label}' added successfully. Please do not activate the key immediately. Please see the Central Server user guide before activating the key.",
+        "title": "Add key"
+      },
+      "delete": {
+        "confirmButton": "Delete",
+        "success": "Signing key deleted successfully",
+        "text": "Delete key '{label}'?",
+        "title": "Delete key"
+      }
+    },
+    "logIn": "Log in",
+    "logOut": "Log out",
+    "signKey": "Sign key",
+    "title": "Signing Keys"
+  },
+  "managementRequestDetails": {
+    "address": "Address",
+    "ca": "CA",
+    "certificateformation": "Authentication Certificate Submitted for Registration",
+    "clientDisableInformation": "Disabled client",
+    "clientEnableInformation": "Enabled client",
+    "clientInformation": "Client Submitted for Registration",
+    "clientRenameInformation": "Renamed client",
+    "comments": "Comments",
+    "expires": "Expires",
+    "ownerChangeInformation": "New Owner Submitted for Registration",
+    "ownerClass": "Owner Class",
+    "ownerCode": "Owner Code",
+    "ownerName": "Owner Name",
+    "received": "Received",
+    "requestId": "Request ID",
+    "requestInformation": "Request Information",
+    "securityServerInformation": "Affected Security Server Information",
+    "serialNumber": "Serial number",
+    "serverCode": "Server Code",
+    "source": "Source",
+    "status": "Status",
+    "subject": "Subject",
+    "subsystemCode": "Subsystem Code",
+    "subsystemName": "Subsystem Name"
+  },
+  "managementRequests": {
+    "addCertificate": "Add Certificate",
+    "addClient": "Add Client",
+    "approved": "Approved",
+    "changeAddress": "Change address",
+    "changeOwner": "Change Owner",
+    "clientDisable": "Disable client",
+    "clientEnable": "Enable client",
+    "dialog": {
+      "approve": {
+        "bodyMessage": "Are you sure you want to approve the management request ID {id} from server {serverId}?",
+        "newMemberWarning": "The specified member does not currently exist. It will be created automatically when this request is approved.",
+        "successMessage": "Management request ID {id} from {serverId} approved",
+        "title": "Approve management request"
+      },
+      "decline": {
+        "bodyMessage": "Are you sure you want to decline the management request ID {id} from server {serverId}?",
+        "successMessage": "Management request ID {id} from {serverId} declined",
+        "title": "Decline management request"
+      }
+    },
+    "maintenanceModeDisable": "Disable maintenance mode",
+    "maintenanceModeEnable": "Enable maintenance mode",
+    "pending": "Pending",
+    "rejected": "Rejected",
+    "removeCertificate": "Remove Certificate",
+    "removeClient": "Remove Client",
+    "renameClient": "Rename client",
+    "revoked": "Revoked",
+    "securityServerId": "Server Identifier",
+    "securityServerOwnerName": "Server Owner Name",
+    "showOnlyPending": "Show only pending requests",
+    "submitted": "Submitted for approval",
+    "unknown": "Unknown"
+  },
+  "members": {
+    "addMember": "Add member",
+    "header": "Members",
+    "member": {
+      "details": {
+        "addedToGroup": "Added to the group",
+        "areYouSureUnregister": "Are you sure you want to unregister the Member {memberCode} from server {serverCode} from the system configuration?",
+        "confirmDelete": "Are you sure you want to delete the Member {member} from the system configuration? Enter the member code to confirm.",
+        "deleteMember": "Delete member",
+        "editMemberName": "Edit Member's name",
+        "enterCode": "Enter Member Code",
+        "globalGroups": "Global Groups",
+        "group": "Group",
+        "memberDeleted": "Member deleted successfully",
+        "memberNameSaved": "Member name successfully saved",
+        "memberSuccessfullyUnregistered": "Member {memberCode} from server {serverCode} has been unregistered",
+        "ownedServers": "Owned Servers",
+        "server": "Server",
+        "unregisterMember": "Unregister member",
+        "usedServers": "Used Servers"
+      },
+      "managementRequests": {
+        "created": "Created",
+        "id": "Req id",
+        "showOnlyWaiting": "Show only waiting requests",
+        "status": "Status",
+        "type": "Request type"
+      },
+      "pagenavigation": {
+        "details": "Details",
+        "managementRequests": "Management Requests",
+        "subsystems": "Subsystems"
+      },
+      "subsystems": {
+        "addClient": "Add subsystem",
+        "areYouSureDelete": "Are you sure you want to delete the Subsystem {subsystemCode} from the X-Road member {memberId} from the system configuration?",
+        "areYouSureUnregister": "Are you sure you want to delete the Subsystem {subsystemCode} from server {serverCode} from the system configuration?",
+        "deleteSubsystem": "Delete Subsystem",
+        "renameSubsystem": "Rename Subsystem",
+        "serverOwner": "Server owner",
+        "servercode": "Server code",
+        "status": "Status",
+        "subsystemSuccessfullyAdded": "Subsystem {subsystemCode} is added to the system configuration",
+        "subsystemSuccessfullyDeleted": "Subsystem {subsystemCode} has been deleted from the system configuration",
+        "subsystemSuccessfullyRenamed": "Subsystem name successfully saved",
+        "subsystemSuccessfullyUnregistered": "Subsystem {subsystemCode} from server {serverCode} has been deleted",
+        "subsystemcode": "Subsystem code",
+        "subsystemname": "Subsystem name"
+      }
+    },
+    "memberSuccessfullyAdded": "Member {memberName} is added to the system configuration."
+  },
+  "noData": {
+    "noMemberClasses": "No member classes",
+    "noSecurityServers": "No security servers"
+  },
+  "securityServers": {
+    "address": "Address",
+    "dialogs": {
+      "deleteAddress": {
+        "areYouSure": "Are you sure you want to delete the Security Server {securityServer} from the system configuration? Enter the server code to confirm.",
+        "enterCode": "Enter Security Server Code",
+        "success": "Security Server deleted.",
+        "title": "Delete Security Server"
+      },
+      "editAddress": {
+        "addressField": "Security server address",
+        "success": "Security server address successfully updated",
+        "title": "Edit Security Server address"
+      }
+    },
+    "disabled": "Temporarily disabled",
+    "maintenanceMode": "In maintenance mode",
+    "ownerClass": "Owner Class",
+    "ownerCode": "Owner Code",
+    "ownerName": "Owner Name",
+    "pending": "Pending approval",
+    "registered": "Registered",
+    "securityServer": {
+      "certificationAuthority": "Certification Authority",
+      "deleteSecurityServer": "Delete Security Server",
+      "deleteServer": "Delete server",
+      "dialog": {
+        "deleteAuthCertificate": {
+          "content": "Are you sure you want to delete the Authentication Certificate Test CA from the system configuration? Enter the server code to confirm.",
+          "securityServerCode": "Enter Security Server Code",
+          "success": "Security server authentication certificate deleted successfully",
+          "title": "Delete Authentication Certificate"
+        }
+      },
+      "expires": "Expires",
+      "serialNumber": "Serial Number",
+      "subject": "Subject",
+      "tabs": {
+        "authCertificates": "Authentication Certificates",
+        "clients": "Clients",
+        "details": "Details",
+        "managementRequests": "Management Requests"
+      }
+    },
+    "serverCode": "Server Code",
+    "unregistered": "Unregistered"
+  },
+  "status": {
+    "global_conf_generation": {
+      "failing": "Global configuration generation failing since {0}",
+      "global_conf_expired": "Global configuration expired",
+      "status_not_found": "Global configuration generations status is unknown"
+    },
+    "signer_error": "Invocation of signer client failed",
+    "signing_key": {
+      "external": {
+        "key_not_available": "Signing of external configuration failed - active key not available",
+        "missing": "Signing of external configuration failed - active key missing",
+        "token_not_active": "Signing of external configuration failed - PIN of active key not entered",
+        "token_not_found": "Signing of external configuration failed - active key not found"
+      },
+      "internal": {
+        "key_not_available": "Signing of internal configuration failed - active key not available",
+        "missing": "Signing of internal configuration failed - active key missing",
+        "token_not_active": "Signing of internal configuration failed - PIN of active key not entered",
+        "token_not_found": "Signing of internal configuration failed - active key not found"
+      }
+    }
+  },
+  "systemSettings": {
+    "addMemberClassTitle": "Add member class",
+    "centralServerAddress": "Central Server Address",
+    "code": "Code",
+    "deleteMemberClass": "Delete member class?",
+    "description": "Description",
+    "editCentralServerAddressSuccess": "Central Server address successfully updated",
+    "editCentralServerAddressTitle": "Edit Central Server address",
+    "editMemberClassTitle": "Edit member class",
+    "instanceIdentifier": "Instance Identifier",
+    "managementServices": {
+      "securityServer": "Management Services' Security Server",
+      "title": "Management Services"
+    },
+    "managementServicesAddress": "Management Services Address",
+    "memberClassDeleted": "Member class deleted.",
+    "memberClassSaved": "Member class saved.",
+    "memberClasses": "Member Classes",
+    "securityServerOwnerGroupCode": "Security Server Owners Group Code",
+    "selectSecurityServer": {
+      "memberClass": "Class",
+      "memberCode": "Code",
+      "name": "Name",
+      "search": "Search",
+      "subsystemCode": "Subsystem",
+      "title": "Select Security Server",
+      "type": "Type",
+      "xroadInstance": "Instance"
+    },
+    "selectSubsystem": {
+      "memberClass": "Class",
+      "memberCode": "Code",
+      "name": "Name",
+      "search": "Search",
+      "subsystemCode": "Subsystem",
+      "title": "Select Subsystem",
+      "type": "Type",
+      "xroadInstance": "Instance"
+    },
+    "serviceProvider": {
+      "changedSuccess": "Service Provider changed successfully",
+      "registeredSuccess": "Management service provider '{subsystemId}' registered as security server '{securityServerId}' client"
+    },
+    "serviceProviderIdentifier": "Service Provider Identifier",
+    "serviceProviderName": "Service Provider Name",
+    "systemParameters": "System Parameters",
+    "wsdlAddress": "WSDL Address"
+  },
+  "tab": {
+    "globalConf": {
+      "externalConf": "External Configuration",
+      "internalConf": "Internal Configuration",
+      "trustedAnchors": "Trusted Anchors"
+    },
+    "main": {
+      "globalConfiguration": "Global Configuration",
+      "managementRequests": "Management Requests",
+      "members": "Members",
+      "securityServers": "Security Servers",
+      "settings": "Settings",
+      "trustServices": "Trust Services"
+    },
+    "settings": {
+      "apiKeys": "API Keys",
+      "backupAndRestore": "Backup And Restore",
+      "globalResources": "Global Resources",
+      "systemSettings": "System Settings",
+      "tlsCertificates": "TLS Certificates"
+    }
+  },
+  "tlsCertificates": {
+    "managementService": {
+      "downloadCertificate": "Download certificate",
+      "downloadSuccess": "Management service TLS certificate successfully downloaded",
+      "generateCsr": {
+        "button": "Generate CSR",
+        "content": "First, provide a distinguished name. Then, generate a new CSR and save it into a safe place",
+        "distinguishedName": "Enter Distinguished name",
+        "example": "CN=mycentralserver.example.com, O=My Organization, C=EE",
+        "title": "Generate TLS Certificate Signing Request"
+      },
+      "generateKey": {
+        "button": "Re-create key",
+        "confirmation": "Generate a new Management service TLS key and certificate?",
+        "explanation": "The system will generate a new Management service TLS key and a self-signed certificate, replacing the existing key and certificate.",
+        "success": "New Management service TLS key and certificate generated successfully",
+        "title": "Management Service TLS key"
+      },
+      "key": "Management Service TLS key",
+      "title": "Management Service TLS certificate",
+      "uploadCertificate": {
+        "button": "Upload certificate",
+        "label": "Upload the certificate file from your computer",
+        "success": "Management service TLS certificate successfully uploaded",
+        "title": "Upload Management Service TLS certificate"
+      }
+    }
+  },
+  "tokens": {
+    "keysInfoMessage": "A maximum of two configuration source signing keys is allowed on a security token",
+    "logIn": "Log in",
+    "loginDialog": {
+      "success": "Logged in token",
+      "title": "Log in"
+    },
+    "logout": {
+      "confirmButton": "Log out",
+      "success": "Logged out of token",
+      "text": "Are you sure you want to log out from the token?",
+      "title": "Log out"
+    },
+    "pin": "Token PIN"
+  },
+  "trustServices": {
+    "acmeServerAuthProfileIdExplanation": "Profile ID used for some ACME servers to let them know the certificate usage type when ordering an authentication certificate.",
+    "acmeServerDirectoryUrlExplanation": "Used by the Security Servers to do certificate related operations via the ACME Server API.",
+    "acmeServerIpAddressExplanation": "A list of ACME Server source IPs that are used to complete the ACME HTTP challenge with the Security Server. Multiple addresses are separated by a comma. This information is shown in the Security Server UI.",
+    "acmeServerSignProfileIdExplanation": "Profile ID used for some ACME servers to let them know the certificate usage type when ordering a signing certificate.",
+    "addCASettingsCheckbox": "This CA can only be used for TLS authentication (mark if true)",
+    "addCertificationService": "Add certification service",
+    "approvedCertificationService": "Approved Certification service",
+    "caSettings": "CA Settings",
+    "certImportedSuccessfully": "Certificate imported successfully",
+    "certProfileInput": "Certificate profile info",
+    "certProfileInputExplanation": "Fully qualified class name that implements the ee.ria.xroad.common.certificateprofile.CertificateProfileInfoProvider interface",
+    "certificationServices": "Certification Services",
+    "timestampingService": {
+      "addedSuccessfully": "Timestamping service added successfully",
+      "dialog": {
+        "add": {
+          "success": "Timestamping service added successfully",
+          "title": "Add timestamping service"
+        },
+        "edit": {
+          "success": "Timestamping service edited successfully",
+          "title": "Edit Timestamping Service",
+          "uploadCertificate": "Upload new certificate"
+        }
+      },
+      "url": "URL"
+    },
+    "timestampingServices": "Timestamping Services",
+    "trustService": {
+      "delete": {
+        "action": "Delete trust service",
+        "confirmationDialog": {
+          "message": "Are you sure you want to delete the trust service \"{name}\"?",
+          "title": "Are you sure?"
+        },
+        "success": "Trust service deleted successfully"
+      },
+      "details": {
+        "issuerDistinguishedName": "Issuer distinguished name",
+        "subjectDistinguishedName": "Subject distinguished name"
+      },
+      "intermediateCas": {
+        "add": {
+          "dialog": {
+            "title": "Add Intermediate CAs"
+          },
+          "success": "Intermediate CA added successfully"
+        },
+        "delete": {
+          "confirmationDialog": {
+            "message": "Are you sure you want to delete the Intermediate CA {name}?",
+            "title": "Are you sure?"
+          },
+          "success": "Intermediate CA deleted successfully"
+        },
+        "intermediateCa": "Intermediate CA"
+      },
+      "ocspResponders": {
+        "add": {
+          "dialog": {
+            "title": "Add OCSP Responder"
+          },
+          "success": "OCSP Responder added successfully"
+        },
+        "delete": {
+          "confirmationDialog": {
+            "message": "Are you sure you want to delete the OCSP Responder with the URL {url}?",
+            "title": "Are you sure?"
+          },
+          "success": "OCSP Responder deleted successfully"
+        },
+        "edit": {
+          "dialog": {
+            "title": "Edit OCSP Responder",
+            "uploadCertificate": "Upload new certificate"
+          },
+          "success": "OCSP Responder edited successfully"
+        },
+        "url": "URL"
+      },
+      "pagenavigation": {
+        "details": "Details",
+        "intermediateCas": "Intermediate CAs",
+        "ocspResponders": "OCSP Responders",
+        "settings": "CA Settings"
+      },
+      "settings": {
+        "acmeCapable": "This CA can be used for ACME",
+        "acmeNotCapable": "This CA can not be used for ACME",
+        "certProfile": "Certificate profile info (fully qualified class name that implements the ee.ria.xroad.common.CertificateProfileInfoProvider interface)",
+        "saveSuccess": "CA Settings successfully saved",
+        "tlsAuth": "This CA can only be used for TLS authentication"
+      },
+      "timestampingService": {
+        "cost": "Cost",
+        "costValues": {
+          "FREE": "Free",
+          "PAID": "Paid",
+          "UNDEFINED": "Undefined"
+        },
+        "delete": {
+          "dialog": {
+            "message": "Are you sure you want to delete the Timestamping service with the URL {url}?",
+            "title": "Are you sure?"
+          },
+          "success": "Timestamping service deleted successfully"
+        },
+        "timestampingInterval": "Timestamping interval",
+        "timestampingIntervalMinutes": "{min} minute(s)",
+        "url": "Url"
+      }
+    },
+    "uploadCertificate": "Upload the certificate file from your computer",
+    "validFrom": "Valid from",
+    "validTo": "Valid to",
+    "viewCertificate": "View Certificate"
+  },
+  "validation": {
+    "messages": {
+      "is": "The {field} field must have a value of \"{other}\""
+    }
+  },
+  "validationError": {
+    "IdentifierChars": "Instance identifier should not contain colon (:), semicolon (;), forward or backward slashes (/\\) or percent signs (%)",
+    "IdentifierCharsField": "Use valid identifier characters only",
+    "SizeField": "value does not meet length requirements"
+  }
+}
